@@ -1,0 +1,24 @@
+{
+  "name": "aula02-stubs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test:unit": "npx mocha tests/unit/*.test.js",
+    "test:integration": "npx mocha -w tests/integration/*.test.js",
+    "test:coverage": "npx nyc npx mocha tests/*/*.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "engines": {
+    "node": "18"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
+    "sinon": "^15.0.1",
+    "supertest": "^6.3.3"
+  }
+}
